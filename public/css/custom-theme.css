@@ -1,0 +1,180 @@
+/* Modern Admin Theme */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #0ea5e9;
+    --primary-dark: #0284c7;
+    --secondary: #64748b;
+    --success: #10b981;
+    --info: #3b82f6;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --light: #f8fafc;
+    --dark: #1e293b;
+    --radius: 15px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #f1f5f9;
+}
+
+/* Sidebar Modern */
+.bg-gradient-sky {
+    background-color: #0ea5e9;
+    background-image: linear-gradient(135deg, #0284c7 0%, #0ea5e9 100%);
+    box-shadow: 4px 0 25px rgba(0,0,0,0.05);
+}
+
+.sidebar .nav-item .nav-link {
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 12px 15px;
+    transition: all 0.3s;
+}
+
+.sidebar .nav-item .nav-link:hover {
+    background: rgba(255,255,255,0.15);
+    transform: translateX(5px);
+}
+
+.sidebar .nav-item.active .nav-link {
+    background: rgba(255,255,255,0.2);
+    font-weight: 600;
+}
+
+/* Navbar Glass */
+.navbar-modern {
+    background: #ffffff !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03) !important;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+/* Cards Modern */
+.card {
+    border: none;
+    border-radius: var(--radius);
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.05) !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background: #fff;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.1) !important;
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #f1f5f9;
+    padding: 1.2rem 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    border-radius: var(--radius) var(--radius) 0 0 !important;
+}
+
+.sidebar-heading {
+    color: rgba(255,255,255,0.6) !important;
+    font-weight: 700;
+}
+
+/* Custom Primary Button override */
+.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%) !important;
+}
+
+.btn-primary:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.15s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn-sky {
+    background: linear-gradient(to right, #0ea5e9, #0284c7);
+    color: white;
+    border: none;
+}
+
+.btn-sky:hover {
+    color: white;
+    filter: brightness(1.1);
+}
+
+/* Dashboard Stats Cards */
+.stat-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-icon-bg {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    font-size: 5rem;
+    opacity: 0.1;
+    transform: rotate(15deg);
+    transition: all 0.3s;
+}
+
+.stat-card:hover .stat-icon-bg {
+    transform: rotate(0deg) scale(1.2);
+    opacity: 0.15;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+/* Table */
+.table thead th {
+    border-top: none;
+    border-bottom: 2px solid #e3e6f0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #b7b9cc;
+    letter-spacing: 1px;
+}
+
+.table td {
+    vertical-align: middle;
+    padding: 1rem 0.75rem;
+}
+
+/* Input */
+.form-control {
+    border-radius: 8px;
+    height: calc(1.5em + 1rem + 2px);
+    border: 1px solid #d1d3e2;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(14, 165, 233, 0.25);
+    border-color: #0ea5e9;
+}
